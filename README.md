@@ -69,12 +69,6 @@ joint1:
 This file describes an anchor point located in the hip of a person, and two IMUs, located in mid thigh and mid tibia 
 respectively. The resulting tree is
 
-```html
-<div>
-<span style="color:black">world</span> -> <span style="color:red">pelvis</span> -> <span style="color:black">hip</span> ->
-<span style="color:green">thigh</span> -> <span style="color:black">knee</span> -> <span style="color:green">tibia</span> 
--> <span style="color:black">ankle</span>
-</div> 
-```
+> world -> {- pelvis -} -> hip -> {+ thigh +} -> knee -> {+ tibia +} -> ankle
 
 Where red nodes are anchor points, green nodes are IMU points and black nodes are mostly decorative TFs for visualization.
