@@ -1,4 +1,4 @@
-### imu_link
+## imu_link
 
 The purpose of this ROS package is to link multiple IMUs to a mocap-like configuration.
 Nodes are separated to ***anchor points*** and ***imu points***. 
@@ -72,3 +72,21 @@ respectively. The resulting tree is
 > world -> {- pelvis -} -> hip -> {+ thigh +} -> knee -> {+ tibia +} -> ankle
 
 Where red nodes are anchor points, green nodes are IMU points and black nodes are mostly decorative TFs for visualization.
+
+### Execution
+The sample launch file launches a Phidget IMU and a Razor 9Dof IMU in the configuration described above
+```bash
+user@host:~$ roslaunch imu_link imu_chain_publisher.launch
+```
+### Dependencies
+No specific packages required, as long as you have ```sensor_msgs/Imu``` messages published from some other node
+
+Tested on:
+- ROS Kinetic
+- Ubuntu 16.04
+
+### TODO
+
+### Project Members
+
+- [Andreas Lydakis](andlydakis@gmail.com)
