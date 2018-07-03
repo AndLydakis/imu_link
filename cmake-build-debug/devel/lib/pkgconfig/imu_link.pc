@@ -1,0 +1,8 @@
+prefix=/home/lydakis/ros_ws/src/imu_link/cmake-build-debug/devel
+
+Name: imu_link
+Description: Description of imu_link
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lydakis/ros_ws/src/imu_link/cmake-build-debug/devel/lib 
+Requires: 

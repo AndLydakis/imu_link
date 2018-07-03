@@ -1,0 +1,13 @@
+<launch>
+    <node name="joint_publisher" type="JointPublisher.py" pkg="imu_link" output="screen" required="true"/>
+    <rosparam file="$(find imu_link)/config/test.yaml" command="load"/>
+
+    <arg name="razor_config_file" default="$(find imu_link)/config/my_razor.yaml"/>
+    <node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen" required="true">
+        <rosparam file="$(arg razor_config_file)" command="load"/>
+    </node>
+
+    <include file="$(find phidgets_imu)/launch/imu.launch"/>
+
+
+</launch>

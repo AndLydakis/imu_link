@@ -1,0 +1,47 @@
+anchor0:
+  sub_topic: ""
+  parent_frame: world
+  child_frame: hip
+  name: pelvis
+  anchor: 1
+  distance_from_parent: 0.15
+  distance_from_child: 0.15
+  offset_x: 0.0
+  offset_y: -0.15
+  offset_z: 0.0
+  offset_qx: 0.0
+  offset_qy: 0.0
+  offset_qz: 0.0
+  offset_qw: 0.0
+
+joint0:
+  sub_topic: imu
+  parent_frame: hip
+  child_frame: knee
+  name: thigh
+  anchor: 0
+  distance_from_parent: 0.3
+  distance_from_child: 0.3
+  offset_x: 0.0
+  offset_y: -0.15
+  offset_z: 0.0
+  offset_qx: 0.0
+  offset_qy: 0.0
+  offset_qz: 0.0
+  offset_qw: 0.0
+
+joint1:
+  sub_topic: imu/data
+  parent_frame: knee
+  child_frame: ankle
+  name: tibia
+  anchor: 0
+  distance_from_parent: 0.3
+  distance_from_child: 0.3
+  offset_x: 0.0
+  offset_y: -0.15
+  offset_z: 0.0
+  offset_qx: 0.0
+  offset_qy: 0.0
+  offset_qz: 0.0
+  offset_qw: 0.0

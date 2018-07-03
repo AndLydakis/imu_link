@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: imu_link
+Description: Description of imu_link
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
