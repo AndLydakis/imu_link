@@ -66,13 +66,24 @@ joint1:
   offset_qw: 0.0
 ```
 
-This file describes an anchor point located in the hip of a person, and two IMUs, located in mid thigh and mid tibia 
-respectively. The resulting tree is
+This file describes an anchor point located in the hip of a person, and two IMUs, located in mid thigh and mid tibia.
+ The resulting tree is:
 
 > world -> {- pelvis -} -> hip -> {+ thigh +} -> knee -> {+ tibia +} -> ankle
 
 Where red nodes are anchor points, green nodes are IMU points and black nodes are mostly decorative TFs for visualization.
 
+Below is a description of the different parameters for each point:
+- **sub_topic:** The topic that the corresponding IMU publishes to (not needed for anchor points)
+- **parent_frame:** The frame that acts as the parent frame for the ```parent_frame -> name``` transform
+- **child_frame:** The frame that acts as the child frame for the ```name -> child_frame``` transform
+- **name:** The name of the IMU/Anchor point, located between the parent and child frame.
+- **anchor:** 1 if the point is an anchor point,  0 otherwise
+- **distance_from_parent:** The straight line distance between ```parent_frame``` and the point 
+- **distance_from_child:** The straight line distance between ```child_frame``` and the point 
+- **offset_x/y/z:** The starting x,y,z offset between ```parent_frame``` and the point 
+- **offset_qx/qy/qz/qw:** The starting orientation (as a quaternion [qx, qy, qz, qw]) offset between ```parent_frame``` and the point
+ 
 ### Execution
 The sample launch file launches a Phidget IMU and a Razor 9Dof IMU in the configuration described above
 ```bash
