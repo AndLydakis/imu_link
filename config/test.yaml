@@ -7,8 +7,8 @@ anchor0:
   distance_from_parent: 0.15
   distance_from_child: 0.15
   offset_x: 0.0
-  offset_y: -0.15
-  offset_z: 0.0
+  offset_y: 0.0
+  offset_z: -0.15
   offset_qx: 0.0
   offset_qy: 0.0
   offset_qz: 0.0
@@ -23,8 +23,8 @@ joint0:
   distance_from_parent: 0.3
   distance_from_child: 0.3
   offset_x: 0.0
-  offset_y: -0.15
-  offset_z: 0.0
+  offset_y: 0.0
+  offset_z: -0.15
   offset_qx: 0.0
   offset_qy: 0.0
   offset_qz: 0.0
@@ -39,8 +39,8 @@ joint1:
   distance_from_parent: 0.3
   distance_from_child: 0.3
   offset_x: 0.0
-  offset_y: -0.15
-  offset_z: 0.0
+  offset_y: 0.0
+  offset_z: -0.15
   offset_qx: 0.0
   offset_qy: 0.0
   offset_qz: 0.0

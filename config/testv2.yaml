@@ -1,0 +1,23 @@
+joint0:
+  sub_topic: /imu/data
+  parent_frame: world
+  name: hip
+  child_frame: knee
+  offset_x: 0.0
+  offset_y: 0.0
+  offset_z: -0.30
+  offset_roll: 0.0
+  offset_pitch: 0.0
+  offset_yaw: 0.0
+
+joint1:
+  sub_topic: /imu/
+  parent_frame: knee
+  name: knee2
+  child_frame: ankle
+  offset_x: 0.0
+  offset_y: 0.0
+  offset_z: -0.30
+  offset_roll: 0.0
+  offset_pitch: 0.0
+  offset_yaw: 0.0
