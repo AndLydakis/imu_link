@@ -36,7 +36,15 @@ joint1:
 
 This file describes a configuration for two IMUs located on the hip and knee joint:
 
-> world -> {+ thigh +} -> knee -> {+ knee2 +} -> ankle
+world -> 
+```diff
++ thigh
+```
+-> knee ->
+```diff
++ ankle
+```
+-> ankle
 
 Where green nodes are IMU points and black nodes are mostly decorative TFs for visualization.
 
