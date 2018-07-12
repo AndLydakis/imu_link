@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/lydakis/ros_ws/src/imu_link/cmake-build-debug/devel/setup.sh
