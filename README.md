@@ -38,11 +38,11 @@ This file describes a configuration for two IMUs located on the hip and knee joi
 
 world -> 
 ```diff
-+ thigh
++ hip
 ```
 -> knee ->
 ```diff
-+ ankle
++ knee2
 ```
 -> ankle
 
